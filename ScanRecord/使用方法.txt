@@ -1,5 +1,8 @@
 下载Apifox
-再安装如下连接步骤导入
+https://www.apifox.cn/?utm_source=baidu_pinzhuan&utm_medium=sem&utm_campaign={planid}&utm_content={unitid}&utm_term={kw_enc_utf8}
+
+
+再按照如下连接步骤导入
 https://www.apifox.cn/help/app/import/#%E5%8A%9F%E8%83%BD%E8%AF%B4%E6%98%8E
 
 
