@@ -1,0 +1,552 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "appwb",
+    "description": "",
+    "version": "1.0.0"
+  },
+  "tags": [
+    {
+      "name": "appwb"
+    }
+  ],
+  "paths": {
+    "/register/email": {
+      "post": {
+        "summary": "注册/邮箱",
+        "x-apifox-folder": "appwb",
+        "x-apifox-status": "developing",
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          "appwb"
+        ],
+        "parameters": [],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "userName": {
+                    "type": "string"
+                  },
+                  "userEmail": {
+                    "type": "string"
+                  },
+                  "userPassword": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "userName",
+                  "userEmail",
+                  "userPassword"
+                ],
+                "x-apifox-ignore-properties": [],
+                "x-apifox-orders": [
+                  "userName",
+                  "userEmail",
+                  "userPassword"
+                ]
+              },
+              "example": {
+                "userName": "zxy",
+                "userEmail": "123@qq.com",
+                "userPassword": "123"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "成功",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "string"
+                    },
+                    "msg": {
+                      "type": "string"
+                    },
+                    "data": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "msg",
+                    "data"
+                  ],
+                  "x-apifox-ignore-properties": [],
+                  "x-apifox-orders": [
+                    "code",
+                    "msg",
+                    "data"
+                  ]
+                },
+                "examples": {
+                  "1": {
+                    "summary": "成功示例",
+                    "value": {
+                      "code": "success",
+                      "msg": "注册成功",
+                      "data": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-run-in-apifox'": "https://www.apifox.cn/web/project/2213242/apis/api-59052266-run"
+      }
+    },
+    "/register/phone": {
+      "post": {
+        "summary": "注册/手机号",
+        "x-apifox-folder": "appwb",
+        "x-apifox-status": "developing",
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          "appwb"
+        ],
+        "parameters": [],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "userName": {
+                    "type": "string"
+                  },
+                  "userPhone": {
+                    "type": "string"
+                  },
+                  "userPassword": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "userName",
+                  "userPhone",
+                  "userPassword"
+                ],
+                "x-apifox-ignore-properties": [],
+                "x-apifox-orders": [
+                  "userName",
+                  "userPhone",
+                  "userPassword"
+                ]
+              },
+              "example": {
+                "userName": "zxy",
+                "userPhone": "18659762985",
+                "userPassword": "123"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "成功",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "string"
+                    },
+                    "msg": {
+                      "type": "string"
+                    },
+                    "data": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "msg",
+                    "data"
+                  ],
+                  "x-apifox-ignore-properties": [],
+                  "x-apifox-orders": [
+                    "code",
+                    "msg",
+                    "data"
+                  ]
+                },
+                "examples": {
+                  "1": {
+                    "summary": "成功示例",
+                    "value": {
+                      "code": "success",
+                      "msg": "注册成功",
+                      "data": ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-run-in-apifox'": "https://www.apifox.cn/web/project/2213242/apis/api-59052411-run"
+      }
+    },
+    "/login/email": {
+      "post": {
+        "summary": "登录/邮箱",
+        "x-apifox-folder": "appwb",
+        "x-apifox-status": "developing",
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          "appwb"
+        ],
+        "parameters": [],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "userEmail": {
+                    "type": "string"
+                  },
+                  "userPassword": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "userEmail",
+                  "userPassword"
+                ],
+                "x-apifox-ignore-properties": [],
+                "x-apifox-orders": [
+                  "userEmail",
+                  "userPassword"
+                ]
+              },
+              "example": {
+                "userEmail": "123@qq.com",
+                "userPassword": "123"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "成功",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "string"
+                    },
+                    "msg": {
+                      "type": "string"
+                    },
+                    "data": {
+                      "type": "object",
+                      "properties": {
+                        "userData": {
+                          "type": "object",
+                          "properties": {
+                            "userId": {
+                              "type": "integer"
+                            },
+                            "userName": {
+                              "type": "string"
+                            },
+                            "userSex": {
+                              "type": "null"
+                            },
+                            "userAvatar": {
+                              "type": "null"
+                            },
+                            "userRegisterTime": {
+                              "type": "null"
+                            },
+                            "userBirthday": {
+                              "type": "null"
+                            },
+                            "userPassword": {
+                              "type": "string"
+                            },
+                            "userEmail": {
+                              "type": "string"
+                            },
+                            "userPhone": {
+                              "type": "null"
+                            }
+                          },
+                          "required": [
+                            "userId",
+                            "userName",
+                            "userSex",
+                            "userAvatar",
+                            "userRegisterTime",
+                            "userBirthday",
+                            "userPassword",
+                            "userEmail",
+                            "userPhone"
+                          ],
+                          "x-apifox-ignore-properties": [],
+                          "x-apifox-orders": [
+                            "userId",
+                            "userName",
+                            "userSex",
+                            "userAvatar",
+                            "userRegisterTime",
+                            "userBirthday",
+                            "userPassword",
+                            "userEmail",
+                            "userPhone"
+                          ]
+                        },
+                        "token": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "userData",
+                        "token"
+                      ],
+                      "x-apifox-ignore-properties": [],
+                      "x-apifox-orders": [
+                        "userData",
+                        "token"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "msg",
+                    "data"
+                  ],
+                  "x-apifox-ignore-properties": [],
+                  "x-apifox-orders": [
+                    "code",
+                    "msg",
+                    "data"
+                  ]
+                },
+                "examples": {
+                  "1": {
+                    "summary": "成功示例",
+                    "value": {
+                      "code": "success",
+                      "msg": "登录成功",
+                      "data": {
+                        "userData": {
+                          "userId": 100002,
+                          "userName": "zxy",
+                          "userSex": null,
+                          "userAvatar": null,
+                          "userRegisterTime": null,
+                          "userBirthday": null,
+                          "userPassword": "123",
+                          "userEmail": "123@qq.com",
+                          "userPhone": null
+                        },
+                        "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxMDAwMDIiLCJleHAiOjE2NzQ1ODIxOTAsInN1YiI6IjEwMDAwMiIsImlhdCI6MTY3NDI4MjE5MH0.yBfudXx_Q8QVpRM-VZ29bFAOZEJT81_C-SST3iZfJhs"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-run-in-apifox'": "https://www.apifox.cn/web/project/2213242/apis/api-59052418-run"
+      }
+    },
+    "/login/phone": {
+      "post": {
+        "summary": "登录/手机号",
+        "x-apifox-folder": "appwb",
+        "x-apifox-status": "developing",
+        "deprecated": false,
+        "description": "",
+        "tags": [
+          "appwb"
+        ],
+        "parameters": [],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "userPhone": {
+                    "type": "string"
+                  },
+                  "userPassword": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "userPhone",
+                  "userPassword"
+                ],
+                "x-apifox-ignore-properties": [],
+                "x-apifox-orders": [
+                  "userPhone",
+                  "userPassword"
+                ]
+              },
+              "example": {
+                "userPhone": "18659762985",
+                "userPassword": "123"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "成功",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "code": {
+                      "type": "string"
+                    },
+                    "msg": {
+                      "type": "string"
+                    },
+                    "data": {
+                      "type": "object",
+                      "properties": {
+                        "userData": {
+                          "type": "object",
+                          "properties": {
+                            "userId": {
+                              "type": "integer"
+                            },
+                            "userName": {
+                              "type": "string"
+                            },
+                            "userSex": {
+                              "type": "null"
+                            },
+                            "userAvatar": {
+                              "type": "null"
+                            },
+                            "userRegisterTime": {
+                              "type": "null"
+                            },
+                            "userBirthday": {
+                              "type": "null"
+                            },
+                            "userPassword": {
+                              "type": "string"
+                            },
+                            "userEmail": {
+                              "type": "null"
+                            },
+                            "userPhone": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "userId",
+                            "userName",
+                            "userSex",
+                            "userAvatar",
+                            "userRegisterTime",
+                            "userBirthday",
+                            "userPassword",
+                            "userEmail",
+                            "userPhone"
+                          ],
+                          "x-apifox-ignore-properties": [],
+                          "x-apifox-orders": [
+                            "userId",
+                            "userName",
+                            "userSex",
+                            "userAvatar",
+                            "userRegisterTime",
+                            "userBirthday",
+                            "userPassword",
+                            "userEmail",
+                            "userPhone"
+                          ]
+                        },
+                        "token": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "userData",
+                        "token"
+                      ],
+                      "x-apifox-ignore-properties": [],
+                      "x-apifox-orders": [
+                        "userData",
+                        "token"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "code",
+                    "msg",
+                    "data"
+                  ],
+                  "x-apifox-ignore-properties": [],
+                  "x-apifox-orders": [
+                    "code",
+                    "msg",
+                    "data"
+                  ]
+                },
+                "examples": {
+                  "1": {
+                    "summary": "成功示例",
+                    "value": {
+                      "code": "success",
+                      "msg": "登录成功",
+                      "data": {
+                        "userData": {
+                          "userId": 100003,
+                          "userName": "zxy",
+                          "userSex": null,
+                          "userAvatar": null,
+                          "userRegisterTime": null,
+                          "userBirthday": null,
+                          "userPassword": "123",
+                          "userEmail": null,
+                          "userPhone": "18659762985"
+                        },
+                        "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxMDAwMDMiLCJleHAiOjE2NzQ1ODIyMTksInN1YiI6IjEwMDAwMyIsImlhdCI6MTY3NDI4MjIxOX0.JX6mVpGdB9FSGcbROJza5SWSG4jlsDDw3cX_tRvgy74"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "x-run-in-apifox'": "https://www.apifox.cn/web/project/2213242/apis/api-59052544-run"
+      }
+    }
+  },
+  "components": {
+    "schemas": {}
+  },
+  "servers": [
+    {
+      "url": "http://dev-cn.your-api-server.com",
+      "description": "开发环境"
+    }
+  ]
+}

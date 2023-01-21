@@ -1,0 +1,8 @@
+下载Apifox
+再安装如下连接步骤导入
+https://www.apifox.cn/help/app/import/#%E5%8A%9F%E8%83%BD%E8%AF%B4%E6%98%8E
+
+
+
+
+服务器部署接口的根url：https://www.zxypro.online:6666
